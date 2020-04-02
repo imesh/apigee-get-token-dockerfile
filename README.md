@@ -1,6 +1,6 @@
 # Apigee get_token Dockerfile
 
-This repository provides a Dockerfile for building a Docker image for Apigee get_token CLI. Kindly note that this Dockerfile is not officially supported by Apigee.
+This repository provides a Dockerfile for building a Docker image for Apigee [get_token](https://docs.apigee.com/api-platform/system-administration/using-gettoken) CLI. Kindly note that this Dockerfile is not officially supported by Apigee.
 
 ## How to Build
 
@@ -47,8 +47,7 @@ Execute below command to set the `SSO_LOGIN_URL` and execute `get_token` command
   docker run --env SSO_LOGIN_URL=https://login.apigee.com -it apigee/get_token get_token
   ```
 
-Update `SSO_LOGIN_URL` value according to your SAML SSO login URL:
-https://docs.apigee.com/api-platform/system-administration/auth-tools#install
+Update `SSO_LOGIN_URL` value according to your SAML SSO login URL. Please refer [acurl and get_token](https://docs.apigee.com/api-platform/system-administration/auth-tools) documentation page for more information.
 
 ## License
 ```
